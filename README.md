@@ -170,20 +170,3 @@ This repository serves as my personal learning journal for Generative AI, where 
 
 ---
 
-# ⭐ If you find this repository helpful
-
-Feel free to:
-
-- ⭐ Star the repository
-- 🍴 Fork the repository
-- 💬 Share feedback or suggestions
-
----
-
-## 👩‍💻 Author
-
-**Sayali Vaidya**
-
-Aspiring Data Scientist | Generative AI Enthusiast | Python Developer
-
-Building practical AI solutions through continuous learning and hands-on projects.
