@@ -1,46 +1,87 @@
-# Prompt Engineering with Groq and LangChain
+# 🚀 Generative AI Learning Repository
 
-## Project Description
+Welcome to my **Generative AI Learning Repository**.
 
-This project demonstrates how to use Prompt Engineering with Groq's Large Language Models (LLMs) using LangChain.
+This repository documents my hands-on learning journey in **Generative AI**, where I explore Large Language Models (LLMs), Prompt Engineering, LangChain, Retrieval-Augmented Generation (RAG), AI Agents, Vector Databases, and other modern GenAI technologies through practical notebooks and projects.
 
-The project covers:
+The goal of this repository is to build a strong foundation in Generative AI by implementing concepts step-by-step using Python.
+
+---
+
+As I continue learning, this repository will expand with additional notebooks and projects.
+
+Example future structure:
+
+```
+GenAI/
+│
+├── PromptEngineering.ipynb
+├── LangChain_Basics.ipynb
+├── PromptTemplates.ipynb
+├── OutputParsers.ipynb
+├── Chains.ipynb
+├── Memory.ipynb
+├── RAG.ipynb
+├── VectorDatabases.ipynb
+├── Embeddings.ipynb
+├── AI_Agents.ipynb
+├── LangGraph.ipynb
+├── MultiModalAI.ipynb
+├── Projects/
+├── assets/
+└── README.md
+```
+
+---
+
+# 📖 Current Notebook
+
+## Prompt Engineering with Groq and LangChain
+
+This notebook demonstrates the fundamentals of Prompt Engineering using **Groq's Large Language Models** with **LangChain**.
+
+### Topics Covered
 
 - Installing required libraries
-- Loading API keys securely
-- Connecting to Groq
-- Sending prompts
+- Setting up Groq API
+- Securely loading API keys using `.env`
+- Connecting to Groq LLMs
+- Creating a ChatGroq model
+- Sending prompts to the model
 - Receiving AI responses
 - Understanding Prompt Engineering basics
+- Working with LangChain PromptTemplate
+- Using `invoke()` for LLM interaction
 
 ---
 
-# Prerequisites
+# 🛠 Technologies Used
 
-Before starting, install:
-
-- Python 3.10+
-- VS Code (or Google Colab)
-- Groq Account
-- Groq API Key
+- Python
+- Groq API
+- LangChain
+- LangChain Core
+- LangChain Groq
+- python-dotenv
+- Jupyter Notebook
 
 ---
 
-# Required Libraries
+# 📦 Installation
 
-Install using:
-
-```bash
-pip install groq
-```
-
-or
+Clone the repository
 
 ```bash
-pip install groq langchain-groq python-dotenv
+git clone https://github.com/your-username/GenAI.git
 ```
 
-or
+Move into the project
+
+```bash
+cd GenAI
+```
+
+Install dependencies
 
 ```bash
 pip install groq langchain-core langchain-groq python-dotenv
@@ -48,121 +89,101 @@ pip install groq langchain-core langchain-groq python-dotenv
 
 ---
 
-# Project Structure
+# 🔐 Environment Variables
+
+Create a `.env` file in the project root.
 
 ```
-Project/
-│
-├── .env
-├── PromptEngineering.ipynb
-├── README.md
-```
-
----
-
-# Create .env File
-
-Create a file named
-
-```
-.env
-```
-
-Add
-
-```
-GROQ_API_KEY=your_api_key_here
+GROQ_API_KEY=your_groq_api_key
 ```
 
 Example
 
 ```
-GROQ_API_KEY=gsk_xxxxxxxxxxxxxxxxx
+GROQ_API_KEY=gsk_xxxxxxxxxxxxxxxxxxxxxxxxx
 ```
+
+**Note:** Never upload your API keys to GitHub.
 
 ---
 
-# Import Required Libraries
+# ▶️ Running the Notebook
 
-```python
-from dotenv import load_dotenv
-import os
-from langchain_groq import ChatGroq
-from langchain_core.prompts import PromptTemplate
+Open
+
 ```
+PromptEngineering.ipynb
+```
+
+Run each cell sequentially to:
+
+- Load environment variables
+- Connect to Groq
+- Initialize the LLM
+- Send prompts
+- Generate AI responses
 
 ---
 
-# Load API Key
+# 📚 Concepts Covered
 
-```python
-load_dotenv()
-
-groq_api_key = os.getenv("GROQ_API_KEY")
-```
-
-Purpose
-
-- Reads API key securely
-- Avoids hardcoding credentials
-
----
-
-# Create LLM
-
-```python
-llm = ChatGroq(
-    model="llama-3.3-70b-versatile",
-    api_key=groq_api_key
-)
-```
-
-Purpose
-
-Creates a connection between Python and Groq's LLM.
-
----
-
-# Send Prompt
-
-```python
-response = llm.invoke("What is Prompt Engineering?")
-```
-
-Purpose
-
-Sends the prompt to the AI model.
-
----
-
-# Display Output
-
-```python
-print(response.content)
-```
-
-Purpose
-
-Displays the AI-generated response.
-
----
-
-# Technologies Used
-
-- Python
-- Groq API
-- LangChain
+- Generative AI
+- Large Language Models (LLMs)
 - Prompt Engineering
-- dotenv
-
----
-
-# Concepts Covered
-
 - Environment Variables
-- API Keys
-- Prompt Engineering
-- LLMs
+- API Security
 - LangChain
 - ChatGroq
+- PromptTemplate
 - invoke()
+- AI Response Generation
+
+---
+
+# 🎯 Learning Roadmap
+
+This repository will gradually include:
+
+- ✅ Prompt Engineering
+- 🔄 Prompt Templates
+- 🔄 Output Parsers
+- 🔄 LangChain Chains
+- 🔄 Memory
+- 🔄 Document Loaders
+- 🔄 Text Splitters
+- 🔄 Embeddings
+- 🔄 Vector Databases
+- 🔄 Retrieval-Augmented Generation (RAG)
+- 🔄 AI Agents
+- 🔄 LangGraph
+- 🔄 Function Calling
+- 🔄 Tool Calling
+- 🔄 Multi-Agent Systems
+- 🔄 Model Context Protocol (MCP)
+- 🔄 AI Projects
+
+---
+
+# 💡 Purpose
+
+This repository serves as my personal learning journal for Generative AI, where I document concepts, experiments, and practical implementations to strengthen my understanding of modern AI development.
+
+---
+
+# ⭐ If you find this repository helpful
+
+Feel free to:
+
+- ⭐ Star the repository
+- 🍴 Fork the repository
+- 💬 Share feedback or suggestions
+
+---
+
+## 👩‍💻 Author
+
+**Sayali Vaidya**
+
+Aspiring Data Scientist | Generative AI Enthusiast | Python Developer
+
+Building practical AI solutions through continuous learning and hands-on projects.
